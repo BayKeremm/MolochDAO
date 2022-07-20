@@ -11,7 +11,7 @@ async function main(){
     const moloch = await Moloch.attach(molochAddress,{from:account3});
 
     const details = "first proposal";
-    await moloch.submitProposal(account3, 0, 0,1,tokenAddress,0,tokenAddress, details);
+    await moloch.submitProposal(account3, 0, 0,1,tokenAddress,0,tokenAddress, details,{gasPrice: 704624388, gasLimit: 30000000});
 
     console.log('Submitted proposal');
 

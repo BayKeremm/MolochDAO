@@ -1,3 +1,4 @@
+
 async function main(){
 
     const summoner = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
@@ -9,9 +10,9 @@ async function main(){
     const moloch = await Moloch.attach(molochAddress,{from:summoner});
 
     const details = "first proposal";
-    await moloch.submitVote(0);
+    await moloch.processProposal(0);
 
-    console.log('voted proposal');
+    console.log('processed proposal');
 
 }
 main()

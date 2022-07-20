@@ -6,7 +6,7 @@ async function main(){
     const token = await Token.attach(tokenAddress);
     console.log( 'Balance of the summoner:',await token.balanceOf(summoner));
     console.log( 'allowance of the summoner to the dao:',await token.allowance(summoner,molochAddress));
-    //console.log( 'total supply of the token',await token.totalSupply());
+    console.log( 'total supply of the token',await token.totalSupply());
     // increase allowance
     //await token.increaseAllowance(molochAddress, 500);
 
