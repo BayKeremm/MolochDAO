@@ -2,6 +2,7 @@ const hardhat = require("hardhat/config");
 const { usePlugin } = hardhat;
 
 require("@nomiclabs/hardhat-etherscan");
+require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-truffle5");
 require("./scripts/moloch-tasks");
 require("./scripts/pool-tasks");
