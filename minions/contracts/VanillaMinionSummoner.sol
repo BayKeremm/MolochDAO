@@ -1,7 +1,6 @@
-// Based on https://github.com/HausDAO/MinionSummoner/blob/main/MinionFactory.sol
-
-// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity 0.7.5;
+// Based on https://github.com/HausDAO/MinionSummoner/blob/main/MinionFactory.sol
+// SPDX-License-Identifier: GPL-3.0-or-later
 
 interface IERC20 { // brief interface for moloch erc20 token txs
     function balanceOf(address who) external view returns (uint256);
